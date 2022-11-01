@@ -217,11 +217,7 @@ strong{font-weight: var(--fw-bold);}
     right: 1em;
     top: 2.5em;
 }
-@media (max-width: 600px){
-    .nav-toggle{
-        /* display: none; */
-    }
-}
+
 .dark-theme h1,
 .dark-theme h2,
 .dark-theme h3,
@@ -302,7 +298,6 @@ strong{font-weight: var(--fw-bold);}
 .intro{
     position: relative;
     color: var(--clr-light);
-    border: 1px solid red;
     padding-top: 10px;
     margin-top: 90px;
     z-index: 1;
