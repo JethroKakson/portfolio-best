@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django project</title>
+    <link rel="stylesheet" href="./django.css">
+    <script src="https://kit.fontawesome.com/49bf1bab2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1Ym
+    yruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha512-0S+nbAYis87iX26mm
+    j/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"/>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="assets/jethro.png" alt=""></a>
+        </div>
+        <div class="icons">
+            <!-- <i class="fa-solid fa-moon" onclick="dark()"></i> -->
+            <button class="nav-toggle" aria-label="toggle navigation" onclick="tog()">
+                <span class="humburger"></span>
+            </button>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html">Home</a></li>
+                <!-- <li class="nav__item"><a href="#services">My services</a></li> -->
+                <!-- <li class="nav__item"><a href="#about">About me</a></li> -->
+                <!-- <li class="nav__item"><a href="#work">My work</a></li> -->
+                <li class="nav__item"><button class="nav__btn" onclick="dark()">Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br><br><br>
+    <!-- introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong><h1><strong>Nsimire</strong></h1> Jethro Kakson</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
+        <img src="assets/puppy.jpg" alt="my photo" class="intro__img">
+    </section>
+
+    <section class="project">
+        <p class="content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, eos debitis rerum provident voluptatem beatae, eligendi iure soluta architecto aspernatur nihil sequi laudantium dolor optio magnam fuga porro sed veniam praesentium laborum eius sapiente vero nemo quo. Qui illo pariatur ratione, eaque hic eius tenetur dolore reiciendis ipsam, corporis accusantium totam culpa, dicta modi cupiditate! Labore, perferendis harum cupiditate dolorem sit dolore est repellat, provident, odio ullam numquam dignissimos corporis. Earum numquam dolore, dolorem dolores odio dignissimos aperiam, voluptate autem omnis architecto repudiandae enim debitis quia illo! Veritatis consectetur repellat officia veniam voluptas dolorem vero ex hic maiores, impedit dicta.</p>
+        <img src="./assets/3.jpg" alt="" class="project__img">
+        <p class="content2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, eos debitis rerum provident voluptatem beatae, eligendi iure soluta architecto aspernatur nihil sequi laudantium dolor optio magnam fuga porro sed veniam praesentium laborum eius sapiente vero nemo quo. Qui illo pariatur ratione, eaque hic eius tenetur dolore reiciendis ipsam, corporis accusantium totam culpa, dicta modi cupiditate! Labore, perferendis harum cupiditate dolorem sit dolore est repellat, provident, odio ullam numquam dignissimos corporis. Earum numquam dolore, dolorem dolores odio dignissimos aperiam, voluptate autem omnis architecto repudiandae enim debitis quia illo! Veritatis consectetur repellat officia veniam voluptas dolorem vero ex hic maiores, impedit dicta.</p>
+        <p class="content3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, eos debitis rerum provident voluptatem beatae, eligendi iure soluta architecto aspernatur nihil sequi laudantium dolor optio magnam fuga porro sed veniam praesentium laborum eius sapiente vero nemo quo. Qui illo pariatur ratione, eaque hic eius tenetur dolore reiciendis ipsam, corporis accusantium totam culpa, dicta modi cupiditate! Labore, perferendis harum cupiditate dolorem sit dolore est repellat, provident, odio ullam numquam dignissimos corporis. Earum numquam dolore, dolorem dolores odio dignissimos aperiam, voluptate autem omnis architecto repudiandae enim debitis quia illo! Veritatis consectetur repellat officia veniam voluptas dolorem vero ex hic maiores, impedit dicta.</p>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:jethrokakson@gmail.com" class="footer__link">jethrokakson@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://github.io/JethroKakson" class="social-list__link">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+            <li class="social-list__item"><a href="" class="social-list__link">
+                <i class="fa-brands fa-facebook"></i>
+            </a></li>
+            <li class="social-list__item"><a href="" class="social-list__link">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a></li>
+            <li class="social-list__item"><a href="" class="social-list__link">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+        </ul>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

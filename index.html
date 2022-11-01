@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/49bf1bab2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1Ym
+    yruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha512-0S+nbAYis87iX26mm
+    j/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"/>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/jethro.png" alt="">
+        </div>
+        <div class="icons">
+            <!-- <i class="fa-solid fa-moon" onclick="dark()"></i> -->
+            <button class="nav-toggle" aria-label="toggle navigation" onclick="tog()">
+                <span class="humburger"></span>
+            </button>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home">Home</a></li>
+                <li class="nav__item"><a href="#services">Services</a></li>
+                <li class="nav__item"><a href="#about">About</a></li>
+                <li class="nav__item"><a href="#work">Work</a></li>
+                <li class="nav__item"><button class="nav__btn" onclick="dark()">Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong><h1><strong>Nsimire</strong></h1> Jethro Kakson</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
+        <img src="assets/puppy.jpg" alt="my photo" class="intro__img">
+    </section>
+
+    <!-- my services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Web Dev</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.
+                     Veniam modi id sequi iusto consequatur architecto illum, optio saepe. Vero illo ipsum fugiat placeat consequuntur totam quasi dolore.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Database Magt</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.
+                    Veniam modi id sequi iusto consequatur architecto illum, optio saepe. Vero illo ipsum fugiat placeat consequuntur totam quasi dolore.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Data Science</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.
+                    Veniam modi id sequi iusto consequatur architecto illum, optio saepe. Vero illo ipsum fugiat placeat consequuntur totam quasi dolore.</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+
+        <a href="#work" class="btn">My work</a>
+    </section>
+
+    <!-- about me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">My background</p>
+        
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.</p>
+        </div>
+        
+        <img src="assets/puppy.jpg" alt="my other img" class="about-me__img">
+    </section>
+
+    <!--my work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">All that i have done</p>
+
+        <div class="portfolio">
+            <!-- portfolio image -->
+            <a href="django.html" class="portfolio__item">
+                <img src="assets/3.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- portfolio image -->
+            <a href="" class="portfolio__item">
+                <img src="assets/4.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- portfolio image -->
+            <a href="" class="portfolio__item">
+                <img src="assets/5.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- portfolio image -->
+            <a href="" class="portfolio__item">
+                <img src="assets/6.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- portfolio image -->
+            <a href="" class="portfolio__item">
+                <img src="assets/7.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- portfolio image -->
+            <a href="" class="portfolio__item">
+                <img src="assets/8.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:jethrokakson@gmail.com" class="footer__link">jethrokakson@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://github.io/JethroKakson" class="social-list__link">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+            <li class="social-list__item"><a href="" class="social-list__link">
+                <i class="fa-brands fa-facebook"></i>
+            </a></li>
+            <li class="social-list__item"><a href="" class="social-list__link">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a></li>
+            <li class="social-list__item"><a href="" class="social-list__link">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+        </ul>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
