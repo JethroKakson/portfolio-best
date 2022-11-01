@@ -193,7 +193,6 @@ header{
 
 @media (max-width: 600px){
     .header{
-        border: 1px solid red;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -339,6 +338,8 @@ header{
 /* intro section */
 .intro{
     position: relative;
+    padding-top: 20px;
+    margin-top: 2.8em;
 }
 
 .intro__img{
