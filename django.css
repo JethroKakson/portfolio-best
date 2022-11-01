@@ -135,6 +135,7 @@ strong{font-weight: var(--fw-bold);}
     font-weight: var(--fw-bold);
     font-size: var(--fs-body);
     border: var(--clr-accent);
+    cursor: pointer;
 }
 
 /* nav for mobile devices */
@@ -202,6 +203,7 @@ strong{font-weight: var(--fw-bold);}
         font-weight: var(--fw-bold);
         font-size: 12px;
         border: var(--clr-accent);
+        cursor: pointer;
     }
 }
 
