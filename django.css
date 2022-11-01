@@ -172,14 +172,14 @@ strong{font-weight: var(--fw-bold);}
         text-decoration: none;
         background-color: var(--clr-accent);
         border-radius: 20px;
-        padding: .2em;
+        padding: .3em;
         transition: all 200ms linear;
         font-weight: var(--fw-bold);
         color: var(--clr-dark);
         font-size: 12px;
     }
     .nav__item a:hover{
-        transform: scale(1.2);
+        /* transform: scale(1.2); */
         background: transparent;
         color: var(--clr-dark);
         border: 2px solid var(--clr-accent);

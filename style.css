@@ -136,7 +136,7 @@ header{
 .logo{
     max-width: 100px;
 }
-.icons{
+/* .icons{
     display: flex;
     justify-content: space-around;
     width: 10%;
@@ -144,7 +144,7 @@ header{
 }
 .icons i{
     cursor: pointer;
-}
+} */
 
 .nav{
     position: fixed;
@@ -161,7 +161,7 @@ header{
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
-    z-index: 1000;
+    /* z-index: 1000; */
     align-items: center;
     transform: translateX(120%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
@@ -193,12 +193,14 @@ header{
 
 @media (max-width: 600px){
     .header{
+        border: 1px solid red;
         align-items: center;
         display: flex;
         justify-content: space-between;
+        width: 20%;
     }
     .nav{
-        position: fixed;
+        /* position: fixed; */
         color: var(--clr-light);
         left: 0;
         top: 8%;
@@ -215,7 +217,8 @@ header{
         flex-direction: row;
         list-style: none;
         justify-content: space-evenly;
-        z-index: 1000;
+        /* position: absolute; */
+        /* z-index: 1000; */
         align-items: center;
         transform: translateX(130%);
         transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
@@ -224,7 +227,7 @@ header{
         text-decoration: none;
         background-color: var(--clr-accent);
         border-radius: 20px;
-        padding: .2em;
+        padding: .7em;
         transition: all 200ms linear;
         font-weight: var(--fw-bold);
         color: var(--clr-dark);
@@ -235,11 +238,12 @@ header{
         background: transparent;
         color: var(--clr-dark);
         border: 2px solid var(--clr-accent);
+        cursor: pointer;
     }
     .nav__item .nav__btn{
         color: var(--clr-dark);
         background: var(--clr-accent);
-        padding: .3em;
+        padding: .7em;
         border-radius: 20px;
         font-weight: var(--fw-bold);
         font-size: 12px;
@@ -288,7 +292,7 @@ header{
 
 @media (max-width: 600px){
     .nav-open .nav__list{
-        transform: translatex(-14%);
+        transform: translatex(-10%);
     }
 }
 
