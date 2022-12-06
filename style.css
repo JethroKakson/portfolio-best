@@ -148,7 +148,6 @@ header{
 
 .nav{
     position: fixed;
-    /* background: var(--clr-dark); */
     color: var(--clr-light);
     left: 30%;
     top: .9%;
@@ -161,7 +160,6 @@ header{
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
-    /* z-index: 1000; */
     align-items: center;
     transform: translateX(120%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
@@ -200,7 +198,6 @@ header{
         width: 20%;
     }
     .nav{
-        /* position: fixed; */
         color: var(--clr-light);
         left: 0;
         top: 8%;
@@ -217,8 +214,6 @@ header{
         flex-direction: row;
         list-style: none;
         justify-content: space-evenly;
-        /* position: absolute; */
-        /* z-index: 1000; */
         align-items: center;
         transform: translateX(130%);
         transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
@@ -288,7 +283,6 @@ header{
 
 .nav-open .nav__list{
     transform: translateX(0%);
-    z-index: 1000;
 }
 
 @media (max-width: 600px){
