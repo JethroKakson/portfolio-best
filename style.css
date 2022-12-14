@@ -136,15 +136,6 @@ header{
 .logo{
     max-width: 100px;
 }
-/* .icons{
-    display: flex;
-    justify-content: space-around;
-    width: 10%;
-    align-items: center;
-}
-.icons i{
-    cursor: pointer;
-} */
 
 .nav{
     position: fixed;
@@ -335,7 +326,7 @@ header{
 .intro{
     position: relative;
     padding-top: 20px;
-    margin-top: 2.8em;
+    margin-top: 3em;
 }
 
 .intro__img{
@@ -461,7 +452,7 @@ header{
 
     .about-me__img{
         grid-area: img;
-        position: relative;
+        /* position: relative; */
         /* z-index: 2; */
     }
 }
