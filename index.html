@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/49bf1bab2d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1Ym
     yruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha512-0S+nbAYis87iX26mm
@@ -15,26 +16,24 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/jethro.png" alt="">
-        </div>
-        <div class="icons">
-            <!-- <i class="fa-solid fa-moon" onclick="dark()"></i> -->
-            <button class="nav-toggle" aria-label="toggle navigation" onclick="tog()">
-                <span class="humburger"></span>
-            </button>
-        </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home">Home</a></li>
-                <li class="nav__item"><a href="#services">Services</a></li>
-                <li class="nav__item"><a href="#about">About</a></li>
-                <li class="nav__item"><a href="#work">Work</a></li>
-                <li class="nav__item"><button class="nav__btn" onclick="dark()">Dark</button></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/jethro.png" alt=""></a>
+          <button class="navbar-toggler" style="border: none;" onclick="tog()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="humburger"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                <!-- <li class="nav-item"><button class="nav-link" onclick="dark()">Dark</button></li> -->
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
+    
     
     <!-- introduction -->
     <section class="intro" id="home">
@@ -51,20 +50,17 @@
         <div class="services">
             <div class="service">
                 <h3>Web Dev</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.
-                     Veniam modi id sequi iusto consequatur architecto illum, optio saepe. Vero illo ipsum fugiat placeat consequuntur totam quasi dolore.</p>
+                <progress value="80" max="100">80 %</progress>
             </div> <!-- / service -->
 
             <div class="service">
                 <h3>Database Magt</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.
-                    Veniam modi id sequi iusto consequatur architecto illum, optio saepe. Vero illo ipsum fugiat placeat consequuntur totam quasi dolore.</p>
+                <progress value="40" max="100">40 %</progress>
             </div> <!-- / service -->
 
             <div class="service">
-                <h3>Data Science</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.
-                    Veniam modi id sequi iusto consequatur architecto illum, optio saepe. Vero illo ipsum fugiat placeat consequuntur totam quasi dolore.</p>
+                <h3>Data Analysis</h3>
+                <progress value="10" max="100">10 %</progress>
             </div> <!-- / service -->
         </div> <!-- / services -->
 
@@ -77,12 +73,30 @@
         <p class="section__subtitle section__subtitle--about">My background</p>
         
         <div class="about-me__body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perferendis fuga ipsa veniam, ut, placeat odit molestias magni mollitia quis doloribus aperiam error ex delectus quas eius maiores aliquid enim explicabo.</p>
+            <p>👋 Hi</p>
+                <p>A self-taught developer passionate about crafting clean, functional digital experiences. My journey into tech started with curiosity and grew into a dedication for solving problems through code.</p>
+                <br />
+                <p>What I Do Best</p>
+                <p>✅ Fast Learner | Quickly adapt to new tools and technologies</p>
+                <p>✅ Team Collaborator | Thrive in environments where ideas are shared</p>
+                <p>✅ Problem Solver | Break complex challenges into manageable solutions</p>
+                <p>✅ Self-Starter | 90% of my skills built through hands-on experimentation</p>
+                <br />
+                <p>Technical Toolbox</p>
+                <p>🛠 Front-End Fundamentals: HTML5, CSS3, JavaScript (ES6+)</p>
+                <p>🐍 Python Proficiency: Scripting, Automation, Web Development</p>
+                <p>🌱 Currently Exploring: Django</p>
+                <br />
+                <p>My Code Philosophy</p>
+                <p>"Progress over perfection." As someone who taught themselves to code, I believe in iterative improvement and learning through building. Whether it's debugging a stubborn JavaScript function or optimizing Python scripts, I love the puzzle-like nature of development.</p>
+                <br />
+                <p>When I'm not coding, you'll find me playing chess, reading the bible, or tutoring or diving into the latest tech blogs to stay sharp. Also i am a dog lover</p>
+                <br />
+                <p>Let's Connect!</p>
+                <p>I'm always excited to collaborate on meaningful projects or discuss how we can work together. <a href="mailto:jethrokakson@gmail.com">jethrokakson@gmail.com</a></p>
         </div>
         
-        <img src="assets/puppy.jpg" alt="my other img" class="about-me__img">
+        <img src="assets/pic.jpg" alt="my other img" class="about-me__img">
     </section>
 
     <!--my work -->
@@ -92,33 +106,8 @@
 
         <div class="portfolio">
             <!-- portfolio image -->
-            <a href="django.html" class="portfolio__item">
-                <img src="assets/3.jpg" alt="" class="portfolio__img">
-            </a>
-
-            <!-- portfolio image -->
-            <a href="" class="portfolio__item">
-                <img src="assets/4.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- portfolio image -->
-            <a href="" class="portfolio__item">
-                <img src="assets/5.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- portfolio image -->
-            <a href="" class="portfolio__item">
-                <img src="assets/6.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- portfolio image -->
-            <a href="" class="portfolio__item">
-                <img src="assets/7.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- portfolio image -->
-            <a href="" class="portfolio__item">
-                <img src="assets/8.jpg" alt="" class="portfolio__img">
+            <a href="wellauganda.com" class="navbar">
+                Wella Uganda
             </a>
         </div>
     </section>
@@ -130,18 +119,10 @@
             <li class="social-list__item"><a href="https://github.io/JethroKakson" class="social-list__link">
                 <i class="fa-brands fa-github"></i>
             </a></li>
-            <li class="social-list__item"><a href="" class="social-list__link">
-                <i class="fa-brands fa-facebook"></i>
-            </a></li>
-            <li class="social-list__item"><a href="" class="social-list__link">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a></li>
-            <li class="social-list__item"><a href="" class="social-list__link">
-                <i class="fa-brands fa-linkedin"></i>
-            </a></li>
         </ul>
     </footer>
 
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
